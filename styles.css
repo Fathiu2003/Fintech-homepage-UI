@@ -1,0 +1,198 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+    background-color: #f0f2f5; /* Light, neutral background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.fintech-homepage {
+    width: 100%;
+    max-width: 450px; /* Standard mobile app width */
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* A. Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff; /* Primary brand color */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* B. Balance Card */
+.balance-card {
+    background-color: #007bff;
+    color: white;
+    padding: 30px 20px;
+    margin: 0 20px 20px 20px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.balance-card .label {
+    opacity: 0.8;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.balance-card .amount {
+    font-size: 2.2em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.balance-card .toggle-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.balance-card .top-up-btn {
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* C. Quick Actions */
+.quick-actions {
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.quick-actions h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.action-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.action-item {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.action-item:hover {
+    background-color: #f0f2f5;
+}
+
+.action-item .icon {
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.action-item p {
+    font-size: 0.85em;
+    margin: 0;
+}
+
+/* D. Recent Transactions */
+.recent-activity {
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.recent-activity h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-item .name {
+    font-weight: 600;
+    margin: 0;
+}
+
+.transaction-item .time {
+    font-size: 0.8em;
+    color: #999;
+    margin: 0;
+}
+
+.transaction-item .amount {
+    font-weight: 600;
+}
+
+.transaction-item .outgoing {
+    color: #dc3545; /* Red for money going out */
+}
+
+.view-all-btn {
+    width: 100%;
+    background: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* E. Promo Banner */
+.promo-banner {
+    margin: 20px;
+    padding: 15px;
+    background-color: #28a745; /* Green for offers/security */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+}
